@@ -4,9 +4,9 @@ Veteriner uygulaması olarak geliştirdiğim bu proje içerisinde evcil hayvanla
 
 ## Gereklilikler
 
-* Java 17
+* Java 8
 * Apache Maven
-* Spring Boot 2.7.1
+* Spring Boot 2.6.9
 -----
 ## Kullanılan Teknolojiler
 * Spring Data JPA
@@ -15,6 +15,7 @@ Veteriner uygulaması olarak geliştirdiğim bu proje içerisinde evcil hayvanla
 * Unit Test
 * Spring Security
 * Thymeleaf
+* Heroku (https://vet-clinic-ms-firatyildiz.herokuapp.com/)
 -----
 ## Katmanlar
 Veteriner uygulamasının katmanları configuration, controller, entity, repository, service şeklinde oluşturulmuştur. (<a href="https://github.com/frtyildiz/Veterinary-Clinic-Management-System/blob/main/images/KatmanlarDetayl%C4%B1.png">Görüntülemek için tıklayınız.</a>). SOLID prensiplerine uygun bir proje hazırlamak amacıyla service işlemleri interface'ler üzerinden arayüzler ile gerçekleştirilmiştir. 
