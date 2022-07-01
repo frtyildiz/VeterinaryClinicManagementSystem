@@ -1,6 +1,6 @@
 # Veterinary Clinic Management System
  
-Veteriner uygulaması olarak geliştirdiğim bu proje içerisinde evcil hayvanların özellikleri tür, cins, isim, yaş, açıklama ve sahiplerin özellikleri isim, soyisim, cep telefonu numarası, adres, e-posta şeklinde oluşturulmuştur. Evcil hayvan sahibi ve evcil hayvan arasında 1'e n olmak üzere bir ilişki kurulduğu için bir evcil hayvan sahibine birden fazla evcil hayvan tanımlaması gerçekleştirilebilmektedir. Ayrıca her kayıt üzerinde değişiklik, silme ve inceleme işlemleri yapılabilir.
+Veteriner uygulaması olarak geliştirdiğim bu proje içerisinde evcil hayvanların özellikleri tür, cins, isim, yaş, açıklama ve sahiplerin özellikleri isim, soy isim, cep telefonu numarası, adres, e-posta şeklinde oluşturulmuştur. Evcil hayvan sahibi ve evcil hayvan arasında 1'e n olmak üzere bir ilişki kurulduğu için bir evcil hayvan sahibine birden fazla evcil hayvan tanımlaması gerçekleştirilebilmektedir. Ayrıca her kayıt üzerinde değişiklik, silme ve inceleme işlemleri yapılabilir.
 
 ## Gereklilikler
 
