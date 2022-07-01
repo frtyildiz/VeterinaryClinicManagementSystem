@@ -18,7 +18,7 @@ Veteriner uygulaması olarak geliştirdiğim bu proje içerisinde evcil hayvanla
 * Heroku (https://vet-clinic-ms-firatyildiz.herokuapp.com/)
 -----
 ## Katmanlar
-Veteriner uygulaması configuration, controller, entity, repository, service şeklinde katmanlara sahiptir. (<a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/images/KatmanlarDetayl%C4%B1.png">Görüntülemek için tıklayınız.</a>). SOLID prensiplerine uygun bir proje hazırlamak amacıyla service işlemleri arayüzler (interface) üzerinden gerçekleştirilmiş, işlemlerde istekleri belirli bir sıraya göre işleme almak ve bir hata durumda rollback uygulanmasını sağlamak amacıyla service sınıflarında @Transactional anotasyonu kullanılmıştır. 
+Veteriner uygulaması configuration, controller, entity, repository, service şeklinde katmanlara sahiptir. (<a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/images/KatmanlarDetayl%C4%B1.png">Görüntülemek için tıklayınız.</a>). SOLID prensiplerine uygun bir proje hazırlamak amacıyla service işlemleri arayüzler (interface) üzerinden gerçekleştirilmiş, gelen istekleri belirli bir sıraya göre işleme almak ve bir hata durumda rollback uygulanmasını sağlamak amacıyla service sınıflarında @Transactional anotasyonu kullanılmıştır. 
 
 Repository sınıfları için JpaRepository arayüzü kullanılmış ve Owner repository sınıfında evcil hayvan sahibinin adına göre arama gerçekleştirebilmek için @Query anotasyonuyla findByName sorgusu oluşturulmuştur.
 
