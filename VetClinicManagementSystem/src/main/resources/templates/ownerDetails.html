@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Owner Details</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+</head>
+
+<body>
+
+<div th:insert="header :: header"></div>
+
+<div class="container">
+
+    <h2>Owner Information</h2>
+
+    <table class="table table-striped" style="width:600px;">
+        <tr>
+            <th>First Name</th>
+            <td th:text="${owner.name}">[First Name]</td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td th:text="${owner.lastname}">[Lastname]</td>
+        </tr>
+        <tr>
+            <th>Mobile Number</th>
+            <td th:text="${owner.phoneNumber}">[Mobile Number]</td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td th:text="${owner.address}">[address]</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td th:text="${owner.email}">[city]</td>
+        </tr>
+        <tr>
+            <a th:href="@{/owner/update(id=${owner.id})}"
+               class="btn btn-info btn-sm">
+                Update
+            </a>
+
+            <a th:href="@{/owner/delete/(id=${owner.id})}"
+               class="btn btn-danger btn-sm"
+               onClick="if (!(confirm('Are you sure you want to delete this owner?'))) return false">
+                Delete
+            </a>
+        </tr>
+    </table>
+
+    <h2>Pet</h2>
+
+
+    <table class="table" style="width:600px;" th:each="pet : ${owner.pets[0]}">
+        <tr>
+            <td valign="top" style="width: 120px;">
+                <dl class="dl-horizontal">
+                    <dt>Name</dt>
+                    <dd th:text="${pet.name}">[name]</dd>
+                    <dt>Species</dt>
+                    <dd th:text="${pet.species}">[species]</dd>
+                    <dt>Type</dt>
+                    <dd th:text="${pet.type}">[type]</dd>
+                    <dt>Birthdate</dt>
+                    <dd th:text="${pet.birthdate}">[birthdate]</dd>
+                    <dt>Description</dt>
+                    <dd th:text="${pet.description}">[description]</dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+
+
+</div>
+
+</body>
+
+</html>
