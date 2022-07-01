@@ -9,6 +9,7 @@ Veteriner uygulaması olarak geliştirdiğim bu proje içerisinde evcil hayvanla
 * Spring Boot 2.6.9
 
 Not: Uygulama herhangi bir IDE kullanılmadan da çalıştırılabilmektedir.
+
 -----
 ## Kullanılan Teknolojiler
 * Spring Data JPA
