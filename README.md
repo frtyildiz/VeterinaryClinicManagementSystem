@@ -30,7 +30,7 @@ Test işlemleri, her iki service sınıfı için de gerçekleştirilmiştir;
 
 - <a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/VetClinicManagementSystem/src/test/java/com/firatyildiz/VetClinicManagementSystem/service/PetServiceTest.java">PetServiceTest sınıfına gitmek için tıklayınız.</a> | <a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/images/PetServiceTestResult.png">Testlerin çalıştırılmış halini görmek için tıklayınız.</a>
 
-Kişiler, evcil hayvan sahibi veya evcil hayvan işlemlerini gerçekleştirebilmek için kullanıcı adı ve şifreye ihtiyaç duymaktadır (<a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/VetClinicManagementSystem/src/main/java/com/firatyildiz/VetClinicManagementSystem/configuration/SecurityConfiguration.java">SecurityConfiguration sınıfını görüntülemek için tıklayınız.</a>)
+Evcil hayvan sahibi veya evcil hayvan işlemlerini gerçekleştirebilmek için kullanıcı adı ve şifreye ihtiyaç duyulmaktadır (<a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/VetClinicManagementSystem/src/main/java/com/firatyildiz/VetClinicManagementSystem/configuration/SecurityConfiguration.java">SecurityConfiguration sınıfını görüntülemek için tıklayınız.</a>)
 Kullanıcı adı ve şifre aşağıdaki gibi belirlenmiştir;
 - Kullanıcı Adı: fırat
 - Şifre: fırat
