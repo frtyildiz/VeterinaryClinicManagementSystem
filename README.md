@@ -7,6 +7,8 @@ Veteriner uygulaması olarak geliştirdiğim bu proje içerisinde evcil hayvanla
 * Java 8
 * Apache Maven
 * Spring Boot 2.6.9
+
+Not: Uygulama herhangi bir IDE kullanılmadan da çalıştırılabilmektedir.
 -----
 ## Kullanılan Teknolojiler
 * Spring Data JPA
