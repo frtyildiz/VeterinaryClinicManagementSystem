@@ -34,7 +34,7 @@ Kullanıcı adı ve şifre aşağıdaki gibi belirlenmiştir;
 -----
 ## İşlemler
 
-Uygulamanın çalıştırılabilir hale getirilmesi için herhangi bir IDE kullanılması gerekmemektedir. <a href="LINK">Buraya tıklayarak uygulamaya ulaşabilirsiniz.</a>
+Uygulamanın çalıştırılabilir hale getirilmesi için herhangi bir IDE kullanılması gerekmemektedir. Bunun için Heroku platform servis sağlayıcısı kullanılmıştır. <a href="https://vet-clinic-ms-firatyildiz.herokuapp.com/">Buraya tıklayarak uygulamaya ulaşabilirsiniz.</a>
 
 Yukarıdaki uzantıya tıklayarak ulaştığınız uygulamanın ana sayfasının menüsünde Home ve Login seçenekleri bulunmaktadır (<a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/images/Home.png">görsel için tıklayınız</a>). Daha önce bahsedildiği üzere evcil hayvan ve evcil hayvan sahibi işlemlerini gerçekleştirebilmek için burada bulunan Login seçeneğine tıklayarak sisteme giriş yapmanız gerekmektedir (<a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/images/Login.png">görsel için tıklayınız</a>). 
 Giriş yapabilmek için yukarıda belirtilen kullanıcı adını ve şifreyi kullanabilirsiniz. Kullanıcı girişi yapıldıktan sonra ön panele yönlendirileceksiniz (<a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/images/Dashboard.png">görsel için tıklayınız</a>). Ayrıca bu işlemden sonra yukarıdaki menüde Owner, Pet, Search Owner, Dashboard seçeneklerinin de aktif hale geldiğini ve erişilebilir olduğunu göreceksiniz.
