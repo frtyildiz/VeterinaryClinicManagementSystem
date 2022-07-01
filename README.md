@@ -1,4 +1,4 @@
-# Veterinary Clinic Management System
+# Veteriner Uygulaması
  
 Veteriner uygulaması olarak geliştirdiğim bu proje içerisinde evcil hayvanların özellikleri tür, cins, isim, yaş, açıklama ve sahiplerin özellikleri isim, soy isim, cep telefonu numarası, adres, e-posta şeklinde oluşturulmuştur. Evcil hayvan sahibi ve evcil hayvan arasında 1'e n olmak üzere bir ilişki kurulduğu için bir evcil hayvan sahibine birden fazla evcil hayvan tanımlaması gerçekleştirilebilmektedir. Ayrıca her kayıt üzerinde değişiklik, silme ve inceleme işlemleri yapılabilir.
 
@@ -25,7 +25,7 @@ Veteriner uygulaması configuration, controller, entity, repository, service şe
 
 Repository arayüzleri için JpaRepository kullanılmış ve OwnerRepository arayüzünde evcil hayvan sahibinin adına göre arama gerçekleştirebilmek için @Query anotasyonuyla findByName sorgusu oluşturulmuştur.
 
-Test işlemleri, her iki service dosyası için de gerçekleştirilmiştir;
+Test işlemleri, her iki service sınıfı için de gerçekleştirilmiştir;
 - <a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/VetClinicManagementSystem/src/test/java/com/firatyildiz/VetClinicManagementSystem/service/OwnerServiceTest.java">OwnerServiceTest sınıfına gitmek için tıklayınız.</a> | <a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/images/OwnerServiceTestResult.png">Testlerin çalıştırılmış halini görmek için tıklayınız.</a>
 
 - <a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/VetClinicManagementSystem/src/test/java/com/firatyildiz/VetClinicManagementSystem/service/PetServiceTest.java">PetServiceTest sınıfına gitmek için tıklayınız.</a> | <a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/images/PetServiceTestResult.png">Testlerin çalıştırılmış halini görmek için tıklayınız.</a>
