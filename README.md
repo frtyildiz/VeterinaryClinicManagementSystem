@@ -2,10 +2,12 @@
  
 Veteriner uygulaması olarak geliştirdiğim bu proje içerisinde evcil hayvanların özellikleri tür, cins, isim, yaş, açıklama ve sahiplerin özellikleri isim, soy isim, cep telefonu numarası, adres, e-posta şeklinde oluşturulmuştur. Evcil hayvan sahibi ve evcil hayvan arasında 1'e n olmak üzere bir ilişki kurulduğu için bir evcil hayvan sahibine birden fazla evcil hayvan tanımlaması gerçekleştirilebilmektedir. Ayrıca her kayıt üzerinde değişiklik, silme ve inceleme işlemleri yapılabilir.
 
-Proje Java 8, Apache Maven, Spring Boot 2.6.9 ve Intellij IDEA kullanılarak geliştirilmiştir. Yerel sunucunuzda uygulamayı çalıştırdıktan sonra internet tarayıcınızın internet adresi alanına http://localhost:8080/ uzantısını yazarak uygulamaya erişebileceğiniz gibi https://vet-clinic-ms-firatyildiz.herokuapp.com/ adresi üzerinden herhangi bir IDE kullanmadan da uygulamayı görüntüleyebilirsiniz.
+Proje Java 8 ve Intellij IDEA kullanılarak geliştirilmiştir. Yerel sunucunuzda uygulamayı çalıştırdıktan sonra internet tarayıcınızın adres çubuğu alanına http://localhost:8080/ uzantısını yazarak uygulamaya erişebileceğiniz gibi https://vet-clinic-ms-firatyildiz.herokuapp.com/ adresi üzerinden herhangi bir IDE kullanmadan da uygulamayı görüntüleyebilirsiniz.
 
 -----
 ## Kullanılan Teknolojiler
+* Apache Maven
+* Spring Boot 2.6.9
 * Spring Data JPA
 * Lombok
 * H2 Database
