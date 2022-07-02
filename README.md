@@ -18,11 +18,11 @@ Proje Java 8 ve Intellij IDEA kullanılarak geliştirilmiştir. Yerel sunucunuzd
 ## Katmanlar
 Veteriner uygulaması configuration, controller, entity, repository, service şeklinde katmanlara sahiptir. (<a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/images/KatmanlarDetayl%C4%B1.png">Görüntülemek için tıklayınız.</a>). SOLID prensiplerine uygun bir proje hazırlamak amacıyla service işlemleri arayüzler (interface) üzerinden gerçekleştirilmiş, gelen istekleri belirli bir sıraya göre işleme almak ve bir hata durumda rollback uygulanmasını sağlamak amacıyla service sınıflarında @Transactional anotasyonu kullanılmıştır. 
 
-Repository arayüzleri için JpaRepository kullanılmış ve OwnerRepository arayüzünde evcil hayvan sahibinin adına göre arama gerçekleştirebilmek için @Query anotasyonuyla findByName sorgusu oluşturulmuştur.
+Repository arayüzleri için JpaRepository kullanılmış ve OwnerRepository arayüzünde evcil hayvan sahibinin adına göre arama yapabilmek için @Query anotasyonuyla findByName sorgusu oluşturulmuştur.
 
 Controller sınıfları @Controller anotasyonuyla işaretlenmiştir. Böylece Model sınıf ve objeleri Thymeleaf şablon motoru üzerinden gösterilmektedir.
 
-Entity katmanında bulunan sınıflar lombok kütüphanesinden @Data anotasyonuyla işaretlenerek sınıf özelliklerinin Getter, Setter metotları oluşturulmuştur. Bu anotasyon ayrıca @ToString, @EqualsAndHashCode metotlarını ve tüm alanları kapsayacak şekilde bir kurucu oluşturulmasını sağlayan @RequiredArgsConstructor anotasyonunu da içermektedir.
+Entity katmanında bulunan sınıflar lombok kütüphanesinden @Data anotasyonuyla işaretlenerek sınıf özelliklerinin Getter, Setter metotları oluşturulmuştur. Bu anotasyon ayrıca @ToString, @EqualsAndHashCode ve tüm alanları kapsayacak şekilde bir kurucu oluşturulmasını sağlayan @RequiredArgsConstructor anotasyonunu da içerir.
 
 Test işlemleri, her iki service sınıfı için de gerçekleştirilmiştir;
 - <a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/VetClinicManagementSystem/src/test/java/com/firatyildiz/VetClinicManagementSystem/service/OwnerServiceTest.java">OwnerServiceTest sınıfına gitmek için tıklayınız.</a> | <a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/images/OwnerServiceTestResult.png">Testlerin çalıştırılmış halini görmek için tıklayınız.</a>
