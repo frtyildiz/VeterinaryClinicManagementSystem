@@ -2,13 +2,7 @@
  
 Veteriner uygulaması olarak geliştirdiğim bu proje içerisinde evcil hayvanların özellikleri tür, cins, isim, yaş, açıklama ve sahiplerin özellikleri isim, soy isim, cep telefonu numarası, adres, e-posta şeklinde oluşturulmuştur. Evcil hayvan sahibi ve evcil hayvan arasında 1'e n olmak üzere bir ilişki kurulduğu için bir evcil hayvan sahibine birden fazla evcil hayvan tanımlaması gerçekleştirilebilmektedir. Ayrıca her kayıt üzerinde değişiklik, silme ve inceleme işlemleri yapılabilir.
 
-## Gereklilikler
-
-* Java 8
-* Apache Maven
-* Spring Boot 2.6.9
-
-Not: Uygulama herhangi bir IDE kullanılmadan da çalıştırılabilmektedir.
+Proje Java 8, Apache Maven, Spring Boot 2.6.9 ve Intellij IDEA kullanılarak geliştirilmiştir. Yerel sunucunuzda uygulamayı çalıştırdıktan sonra internet tarayıcınızın internet adresi alanına http://localhost:8080/ uzantısını yazarak uygulamaya erişebileceğiniz gibi https://vet-clinic-ms-firatyildiz.herokuapp.com/ adresi üzerinden herhangi bir IDE kullanmadan da uygulamayı görüntüleyebilirsiniz.
 
 -----
 ## Kullanılan Teknolojiler
@@ -18,7 +12,6 @@ Not: Uygulama herhangi bir IDE kullanılmadan da çalıştırılabilmektedir.
 * Unit Test
 * Spring Security
 * Thymeleaf
-* Heroku (https://vet-clinic-ms-firatyildiz.herokuapp.com/)
 -----
 ## Katmanlar
 Veteriner uygulaması configuration, controller, entity, repository, service şeklinde katmanlara sahiptir. (<a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/images/KatmanlarDetayl%C4%B1.png">Görüntülemek için tıklayınız.</a>). SOLID prensiplerine uygun bir proje hazırlamak amacıyla service işlemleri arayüzler (interface) üzerinden gerçekleştirilmiş, gelen istekleri belirli bir sıraya göre işleme almak ve bir hata durumda rollback uygulanmasını sağlamak amacıyla service sınıflarında @Transactional anotasyonu kullanılmıştır. 
