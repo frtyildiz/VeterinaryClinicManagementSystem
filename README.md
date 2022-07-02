@@ -20,6 +20,10 @@ Veteriner uygulaması configuration, controller, entity, repository, service şe
 
 Repository arayüzleri için JpaRepository kullanılmış ve OwnerRepository arayüzünde evcil hayvan sahibinin adına göre arama gerçekleştirebilmek için @Query anotasyonuyla findByName sorgusu oluşturulmuştur.
 
+Controller sınıfları @Controller anotasyonuyla işaretlenmiştir. Böylece Model sınıf ve objeleri Thymeleaf şablon motoru üzerinden gösterilmektedir.
+
+Entity katmanında bulunan sınıflar lombok kütüphanesinden @Data anotasyonuyla işaretlenerek sınıf özelliklerinin Getter, Setter metotları oluşturulmuştur. Bu anotasyon ayrıca @ToString, @EqualsAndHashCode metotlarını ve tüm alanları kapsayacak şekilde bir kurucu oluşturulmasını sağlayan @RequiredArgsConstructor anotasyonunu da içermektedir.
+
 Test işlemleri, her iki service sınıfı için de gerçekleştirilmiştir;
 - <a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/VetClinicManagementSystem/src/test/java/com/firatyildiz/VetClinicManagementSystem/service/OwnerServiceTest.java">OwnerServiceTest sınıfına gitmek için tıklayınız.</a> | <a href="https://github.com/frtyildiz/VeterinaryClinicManagementSystem/blob/main/images/OwnerServiceTestResult.png">Testlerin çalıştırılmış halini görmek için tıklayınız.</a>
 
